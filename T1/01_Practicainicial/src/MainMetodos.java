@@ -11,6 +11,6 @@ public class MainMetodos {
     }
 
     public static void despedir (){
-        System.out.println("Hasta luego Mari Carmen");
+        System.out.println("Hasta luego Mari Pepa");
     }
 }
