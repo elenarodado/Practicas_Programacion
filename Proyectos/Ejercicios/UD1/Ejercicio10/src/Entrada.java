@@ -6,6 +6,6 @@ public class Entrada {
         System.out.println("Temperatura en Celsius: "+gradosCelsius);
 
         Operaciones conversionTemperaturas = new Operaciones();
-        conversionTemperaturas.multiplicar(+gradosCelsius,9,5,32);
+        conversionTemperaturas.operandoFahrenheit(+gradosCelsius,9,5,32);
     }
 }
