@@ -129,4 +129,39 @@ public class Operadores {
 
         lectorTeclado.close();
     }
+
+    public void cambiosTipo(){
+
+        // CASTEO (de int -> char)
+        int letraAscii = 75;
+        System.out.println((char)letraAscii);
+
+        // CASTEO (de char -> int)
+        char letra = 'w';
+        System.out.println((int)letra);
+
+        // PARSEO (de String a -> X)
+        /* Este ejemplo NO ES POSIBLE, Hola NO SE PUEDE traducir a numero
+        String palabra = "Hola";
+        System.out.println(Integer.parseInt(palabra));
+        */
+        String palabra = "7";
+        System.out.println(Integer.parseInt(palabra)+10); // si String es un numero se puede pasar a int desde la clase envolvente de int -> Integer
+
+        // PARSEO (de String a -> boolean)
+        String palabraB = "true";
+        System.out.println(Boolean.parseBoolean(palabraB));
+
+        // PARSEO (de boolean -> String)
+        boolean cierto = true;
+        System.out.println(String.valueOf(cierto)+"asd");
+
+        //PARSEO (de int -> String)
+        int numero = 123;
+        System.out.println(String.valueOf(numero)+1); // este resultado será 1231
+
+        // PARSEO (de cahr -> String)
+        char letra1 = 'a';
+        System.out.println(String.valueOf(letra1));
+    }
 }

@@ -1,0 +1,29 @@
+public class Finanzas {
+    private double ingresos;
+    private double gastos;
+
+    public Finanzas(double ingresos, double gastos) {
+        this.ingresos = ingresos;
+        this.gastos = gastos;
+    }
+
+    public double getIngresos() {
+        return ingresos;
+    }
+
+    public void setIngresos(double ingresos) {
+        this.ingresos = ingresos;
+    }
+
+    public double getGastos() {
+        return gastos;
+    }
+
+    public void setGastos(double gastos) {
+        this.gastos = gastos;
+    }
+
+    public double calcularBeneficioNeto() {
+        return this.getIngresos() - this.getGastos();
+    }
+}
